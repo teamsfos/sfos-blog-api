@@ -1,0 +1,54 @@
+{
+  "name": "sfos-blog-api",
+  "version": "1.0.0",
+  "description": "API that I created using HapiJS",
+  "keywords": [
+    "nodejs",
+    "rest-api",
+    "hapijs"
+  ],
+  "homepage": "https://github.com/teamsfos/sfos-blog-api#readme",
+  "bugs": {
+    "url": "https://github.com/teamsfos/sfos-blog-api/issues",
+    "email": "jordirwn@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamsfos/sfos-blog-api.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jordi Irawan",
+    "email": "jordirwn@gmail.com",
+    "url": "https://jrdrwn.github.io/"
+  },
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "start": "pm2-runtime start ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "@hapi/inert": "^6.0.5",
+    "@hapi/jwt": "^2.1.1",
+    "@hapi/vision": "^6.1.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "hapi-pino": "^10.1.0",
+    "hapi-swagger": "14.5.5",
+    "joi": "17.x",
+    "mongoose": "^6.4.3",
+    "openapi-types": "^12.0.0",
+    "pino-pretty": "^8.1.0",
+    "pm2": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  }
+}
